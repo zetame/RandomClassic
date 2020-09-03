@@ -5,48 +5,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-        body {
-            background-image: url('https://i.pinimg.com/originals/06/a2/13/06a213d478d98f03ad0531c15740378a.jpg');
+          body {
+            background-image: url('https://storage.googleapis.com/kaggle-datasets-images/196294/434491/20d9ecae132a013b404e3edd881b42ff/data-original.jpg?t=2019-05-17-14-16-33');
           }
+        
           </style>
         
-        <title>Random Classic</title>
+        <title>Random Classics</title>
     </head>
     <body>
-        <div><h1>Who will play <br> You a music</h1>
+        <div><h1>Random Classics</h1> </div>
         <nav>
-        <li><audio id="audio1" controls preload="auto">
+        <li><audio class = "music" id="audio1" controls preload="auto" style="display:none">
             <source src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Beethoven_Moonlight_1st_movement.ogg"   type="audio/mpeg">
             
           Your browser does not support the audio element.
         
         </audio></li>
-         <li> <audio id="audio2" controls preload="auto">
+         <li> <audio class = "music" id="audio2" controls preload="auto" style="display:none">
             <source src="https://upload.wikimedia.org/wikipedia/commons/2/24/Mozart_-_Eine_kleine_Nachtmusik_-_1._Allegro.ogg"  type="audio/mpeg">
             
           Your browser does not support the audio element.
         
           </audio></li>
-          <li><audio id="audio3" controls preload="auto">
+          <li><audio class = "music" id="audio3" controls preload="auto" style="display:none">
             <source src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Schubert_-_Piano_Sonatas_-_7_Scherzo.ogg"  type="audio/mpeg">
             
           Your browser does not support the audio element.
         
           </audio></li>
-         <li> <audio id="audio4" controls preload="auto">
+         <li> <audio class = "music" id="audio4" controls preload="auto" style="display:none">
             <source src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Bach_Sinfonien15.ogg"  type="audio/mpeg">
             
           Your browser does not support the audio element.
         
           </audio></li>
-         <li> <audio id="audio5" controls preload="auto">
+         <li> <audio class = "music" id="audio5" controls preload="auto" style="display:none">
             <source src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Tchaikovsky_the_Seasons_December.ogg"  type="audio/mpeg">
             
           Your browser does not support the audio element.
         
           </audio></li>
         </nav>
-            <button id="musician" onclick="random();"><strong>Find Out</strong></button>
+          <div>
+            <img id="mainpic" src="https://s3.amazonaws.com/newsimg.furman.edu/wp-content/uploads/2016/11/04142218/istock-conductor-1920.jpg" alt="" width="400px" height="400px">
+            <br>
+            <button id="musician" onclick="random();">PLAY</button>
+          </div>
+          <div><p id="songname">.</p></div>
+            
         </div>
         
         <script src="script.js"></script>
